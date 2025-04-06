@@ -1,0 +1,27 @@
+﻿.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top:5px;
+    margin-bottom:5px;
+    min-height: 180px;
+
+}
+
+    .card.retreat {
+        transform: scale(0.95);
+        width: 55%;
+        opacity: 0.8;
+        filter: blur(2px);
+    }
+
+    .card:not(.retreat):hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }

@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./StyleSheet1.css">
     <style>
         /* Custom styles can go here */
         .hero-section {
@@ -22,7 +23,7 @@
         }
     </style>
 </head>
-<body>
+<body data-bs-theme="dark">
     <!-- Header/Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -70,22 +71,30 @@
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </section>
 
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Main Content Area</h2>
-                <p>This is where your main content would go. You can put articles, blog posts, or any other primary content here.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+        <div class="row col-md-8 card">
+            <div class="">
+                <div class="card-body">
+                    <h5 class="card-title">C# and Python</h5>
+                    <p class="card-text">Proficient in object-oriented programming using C# and Python, primarily for software and industrial applications.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-header">
-                        Sidebar
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Additional Info</h5>
-                        <p class="card-text">You can put widgets, links, or other supplementary content here.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+        </div>
+        <div class="row col-md-8 card">
+            <div class="">
+                <div class="card-body">
+                    <h5 class="card-title">Django, Flask</h5>
+                    <p class="card-text">Experienced with these Python web frameworks for building scalable web applications.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
+                </div>
+            </div>
+        </div>
+        <div class="row col-md-8 card">
+            <div class="">
+                <div class="card-body">
+                    <h5 class="card-title">Laravel, SlimPHP</h5>
+                    <p class="card-text">Skilled in PHP frameworks used for building structured backend systems.</p>
+                    <a href="#" class="btn btn-primary">Button</a>
                 </div>
             </div>
         </div>
@@ -94,55 +103,30 @@
     <!-- Footer -->
     <footer class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5>About Us</h5>
-                    <p>Quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Home</a></li>
-                        <li><a href="#" class="text-white">About</a></li>
-                        <li><a href="#" class="text-white">Services</a></li>
-                        <li><a href="#" class="text-white">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4 mb-md-0">
-                    <h5>Contact</h5>
-                    <address>
-                        123 Main St<br>
-                        City, State 12345<br>
-                        <i class="bi bi-telephone"></i> (123) 456-7890<br>
-                        <i class="bi bi-envelope"></i> info@example.com
-                    </address>
-                </div>
-                <div class="col-md-3">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-3 d-flex justify-content-center">
                     <h5>Follow Us</h5>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
-                    </div>
+                </div>
+                <div class="social-links d-flex  justify-content-center">
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
                 </div>
             </div>
             <hr class="my-4 bg-light">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-0">&copy; 2023 Your Company. All rights reserved.</p>
+                    <p class="mb-0">&copy; 2025 Arjol Filipi. All rights reserved.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">
-                        <a href="#" class="text-white">Privacy Policy</a> |
-                        <a href="#" class="text-white">Terms of Service</a>
-                    </p>
-                </div>
+                
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./scripts.js"></script>
 </body>
 </html>
