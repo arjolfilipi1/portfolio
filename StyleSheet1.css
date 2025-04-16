@@ -10,7 +10,7 @@
     padding: 20px;
 }
 
-.card {
+.card-move {
     transition: all 0.3s ease;
     cursor: pointer;
     margin-top:5px;
@@ -19,7 +19,7 @@
 
 }
 
-    .card.retreat {
+    .card-move.retreat {
         transform: scale(0.95);
         width: 55%;
         opacity: 0.8;
@@ -27,7 +27,7 @@
         filter: blur(2px);
     }
 
-    .card:not(.retreat):hover {
+    .card-move:not(.retreat):hover {
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
@@ -51,4 +51,9 @@ footer{
   left: 0;
   right: 0;
   z-index: -1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(0%) !important;
 }
