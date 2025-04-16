@@ -3,19 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Boilerplate</title>
+    <title>Arjol Filipi</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./StyleSheet1.css">
     <style>
-        /* Custom styles can go here */
-        .hero-section {
-            min-height: 300px;
-            background-color: #f8f9fa;
-            padding: 4rem 0;
-        }
+     
 
         footer {
             background-color: #212529;
@@ -23,7 +18,7 @@
         }
     </style>
 </head>
-<body data-bs-theme="dark">
+<body data-bs-theme="dark" class="transpart">
     <!-- Header/Navbar -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -65,41 +60,141 @@
 
     <!-- Main Content -->
     <main class="container my-5">
-        <section class="hero-section text-center rounded mb-5">
-            <h1>Welcome to Our Website</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-        <div class="row col-md-8 card">
-            <div class="">
-                <div class="card-body">
-                    <h5 class="card-title">C# and Python</h5>
-                    <p class="card-text">Proficient in object-oriented programming using C# and Python, primarily for software and industrial applications.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+		<div class="row   odd">
+            <div class="card">
+                <div class="card-body col-md-8  justify-content-center">
+					<div>
+						<h5 class="card-title">C# and Python</h5>
+						<p class="card-text">Proficient in object-oriented programming using C# and Python, primarily for software and industrial applications.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
                 </div>
             </div>
         </div>
-        <div class="row col-md-8 card">
-            <div class="">
-                <div class="card-body">
-                    <h5 class="card-title">Django, Flask</h5>
-                    <p class="card-text">Experienced with these Python web frameworks for building scalable web applications.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+        <div class="row   even justify-content-end">
+            <div class="card">
+                <div class="card-body  col-md-8  justify-content-center">
+					<div>
+						<h5 class="card-title">Django, Flask</h5>
+						<p class="card-text">Experienced with these Python web frameworks for building scalable web applications.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
                 </div>
             </div>
         </div>
-        <div class="row col-md-8 card">
-            <div class="">
-                <div class="card-body">
-                    <h5 class="card-title">Laravel, SlimPHP</h5>
-                    <p class="card-text">Skilled in PHP frameworks used for building structured backend systems.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+        <div class="row   odd">
+            <div class="card">
+                <div class="card-body col-md-8 d-flex justify-content-center">
+					<div>
+						<h5 class="card-title">Laravel, SlimPHP</h5>
+						<p class="card-text">Skilled in PHP frameworks used for building structured backend systems.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div class="row   even justify-content-end">
+            <div class="card">
+                <div class="card-body  col-md-8  justify-content-center">
+					<div>
+						<h5 class="card-title">PHP, CSS, SQL, JavaScript/jQuery</h5>
+						<p class="card-text">Competent in core web development languages for both frontend (CSS, JavaScript) and backend (PHP, SQL) tasks.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div class="row   odd">
+            <div class="card">
+                <div class="card-body col-md-8 d-flex justify-content-center">
+					<div>
+						<h5 class="card-title">Bootstrap</h5>
+						<p class="card-text">Familiar with this frontend toolkit for developing responsive, mobile-first websites.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div class="row   even justify-content-end">
+            <div class="card">
+                <div class="card-body  col-md-8  justify-content-center">
+					<div>
+						<h5 class="card-title">React</h5>
+						<p class="card-text">Competent in core web development languages for both frontend (CSS, JavaScript) and backend (PHP, SQL) tasks.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div class="row   odd">
+            <div class="card">
+                <div class="card-body col-md-8 d-flex justify-content-center">
+					<div>
+						<h5 class="card-title">SQL, PostgreSQL, MySQL, MongoDB</h5>
+						<p class="card-text">Experienced in both relational and non-relational database systems.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div class="row   even justify-content-end">
+            <div class="card">
+                <div class="card-body  col-md-8  justify-content-center">
+					<div>
+						<h5 class="card-title">RESTful API</h5>
+						<p class="card-text">Able to design and implement RESTful APIs for communication between client and server.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div class="row   odd">
+            <div class="card">
+                <div class="card-body col-md-8 d-flex justify-content-center">
+					<div>
+						<h5 class="card-title">Docker, AWS development</h5>
+						<p class="card-text">Comfortable working with Docker for containerization and AWS for cloud-based development.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
+                </div>
+            </div>
+        </div>
+		<div class="row   even justify-content-end">
+            <div class="card">
+                <div class="card-body  col-md-8  justify-content-center">
+					<div>
+						<h5 class="card-title">TensorFlow</h5>
+						<p class="card-text">Familiar with machine learning using the TensorFlow library.</p>
+						<a href="#" class="btn btn-primary">Check projects</a>
+					</div>
                 </div>
             </div>
         </div>
     </main>
-
+<div class="p-3 m-3 hr">
+</div>
     <!-- Footer -->
     <footer class="py-5">
         <div class="container">
@@ -124,10 +219,16 @@
             </div>
         </div>
     </footer>
-
+<canvas class="particle"></canvas>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" ></script>
     <script>
+	var particles = Particles.init({
+	selector: '.particle',
+  color: ['#0569ab','#0acefa','#03ad3f'],
+  connectParticles:true
+});
 	
 	function isElementNearCenter(el, tolerance = 50) {
     const rect = el.getBoundingClientRect();
@@ -142,7 +243,7 @@
 
 function updateFocus() {
     document.querySelectorAll('.card').forEach(card => {
-        if (isElementNearCenter(card, 50)) {
+        if (isElementNearCenter(card, 70)) {
             card.classList.remove('retreat');
             card.classList.remove('col-md-8');
             card.classList.add('col-md-10');

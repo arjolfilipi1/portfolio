@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work History</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./StyleSheet1.css">
+    <style>
+
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #0d6efd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+            border-radius: 10px;
+        }
+        
+        .timeline-container {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        
+        .timeline-container::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: white;
+            border: 4px solid #0d6efd;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        @media screen and (max-width: 768px) {
+            /* Place the timelime to the left */
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-container {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+
+            .timeline-container::after {
+                left: 18px;
+            }
+
+            .right {
+                left: 0%;
+            }
+        }
+        
+    </style>
+</head>
+<body class="transparent">
+     <!-- Header/Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">My Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Work History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init
+                                data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container my-5">
+        <h1 class="text-center mb-5">Project Timeline</h1>
+        
+        <!-- Vertical Timeline -->
+        <section class="mb-5">
+            <h2 class="mb-4">Vertical Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h3>2023 <i class="bi bi-calendar-check"></i></h3>
+                        <p class="text-muted"><i class="bi bi-clock"></i> January - March</p>
+                        <p>Project conception and initial planning. Conducted market research and feasibility studies.</p>
+                        <span class="badge bg-success">Completed</span>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <h3>2023 <i class="bi bi-calendar-check"></i></h3>
+                        <p class="text-muted"><i class="bi bi-clock"></i> April - June</p>
+                        <p>Development phase 1. Core functionality implemented. First prototype created.</p>
+                        <span class="badge bg-success">Completed</span>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h3>2023 <i class="bi bi-calendar-check"></i></h3>
+                        <p class="text-muted"><i class="bi bi-clock"></i> July - September</p>
+                        <p>Testing and quality assurance. User feedback collected and analyzed.</p>
+                        <span class="badge bg-primary">In Progress</span>
+                    </div>
+                </div>
+                <div class="timeline-container right">
+                    <div class="timeline-content">
+                        <h3>2023 <i class="bi bi-calendar-check"></i></h3>
+                        <p class="text-muted"><i class="bi bi-clock"></i> October - December</p>
+                        <p>Final development phase. Marketing campaign launch preparation.</p>
+                        <span class="badge bg-secondary">Pending</span>
+                    </div>
+                </div>
+                <div class="timeline-container left">
+                    <div class="timeline-content">
+                        <h3>2024 <i class="bi bi-calendar-check"></i></h3>
+                        <p class="text-muted"><i class="bi bi-clock"></i> Q1</p>
+                        <p>Product launch and official release. Customer support systems go live.</p>
+                        <span class="badge bg-secondary">Pending</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <hr class="my-5">
+        
+        <!-- Timeline with Cards 
+        <section id="cards" class="mb-5">
+            <h2 class="mb-4">Timeline with Cards</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Phase 1</h5>
+                            <p class="card-text small mb-0">Jan-Mar 2023</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Project conception and initial planning. Conducted market research and feasibility studies.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Completed</span>
+                                <button class="btn btn-sm btn-outline-primary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Phase 2</h5>
+                            <p class="card-text small mb-0">Apr-Jun 2023</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Development phase 1. Core functionality implemented. First prototype created.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-success">Completed</span>
+                                <button class="btn btn-sm btn-outline-primary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="card-title mb-0">Phase 3</h5>
+                            <p class="card-text small mb-0">Jul-Sep 2023</p>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Testing and quality assurance. User feedback collected and analyzed.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">In Progress</span>
+                                <button class="btn btn-sm btn-outline-primary">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+		-->
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <h5>Follow Us</h5>
+                </div>
+                <div class="social-links d-flex  justify-content-center">
+                    <a href="#" class="text-white me-2"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Arjol Filipi. All rights reserved.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+<canvas class="particle"></canvas>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js" ></script>
+	<script>
+	var particles = Particles.init({
+	selector: '.particle',
+  color: ['#0569ab','#0acefa','#03ad3f'],
+  connectParticles:true
+});
+</script>
+</body>
+</html>

@@ -1,6 +1,11 @@
-﻿.card-container {
+﻿[data-bs-theme="dark"] {
+  --bs-dark: #01091c; /* New dark color */
+  --bs-dark-rgb:1, 9, 28;
+  
+ 
+}
+.card-container {
     display: flex;
-    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
@@ -10,7 +15,7 @@
     cursor: pointer;
     margin-top:5px;
     margin-bottom:5px;
-    min-height: 180px;
+    min-height: 200px;
 
 }
 
@@ -18,6 +23,7 @@
         transform: scale(0.95);
         width: 55%;
         opacity: 0.8;
+		font-size:0.55rem;
         filter: blur(2px);
     }
 
@@ -25,3 +31,24 @@
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
+footer{
+	padding-top:10 px important;
+}
+.btn-primary{
+	background-color: #0596eb;
+	border-color: #0596eb;
+	 transition: all 0.3s ease;
+}
+.transparent{
+	background-color: #fff;
+}
+.particle {
+	width:100vw;
+	height:100vh;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
