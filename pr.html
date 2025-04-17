@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Showcase</title>
+  <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./StyleSheet1.css">
+  <style>
+    
+
+    #particles-js {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0;
+      left: 0;
+    }
+
+   
+
+    
+
+  </style>
+</head>
+<body data-bs-theme="dark">
+
+  <!-- Particle background -->
+  <div id="particles-js"></div>
+
+  <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Arjol Filipi Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./wh.html">Work History</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button data-mdb-button-init class="navbar-toggler" type="button" data-mdb-collapse-init
+                                data-mdb-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                            <i class="fas fa-bars"></i>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+  <!-- Main content -->
+  <div class="content container">
+    <div class="text-center mb-5">
+      <h1>Project Showcase</h1>
+      <p class="lead">Explore some of my featured projects below.</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="./mesj.PNG" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Django Manufacturing Execution System</h5>
+            <p class="card-text">Manufacturing Execution System made in Django, created by adding features in the admin page</p>
+            <a href="https://github.com/arjolfilipi1/django-mes" class="btn btn-outline-light" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+<!-- Project Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="./miss.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Error Record keeping website</h5>
+            <p class="card-text">An error loging website made with Django and Bootstrap used in Manufacturing for Quality controll</p>
+            <a href="https://github.com/arjolfilipi1/Gabime" class="btn btn-outline-light" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="./mana.PNG" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Order management program</h5>
+            <p class="card-text">Website that is connected with an invetoring software that creates work orders, production plans, machine time allocation, BOM, convertions from pcs to kg, stock lever dashboard, consumable items level dashboar and supply order creation,</p>
+            <a href="#" class="btn btn-outline-light disabled " target="_blank">Project is not public</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project Card 4 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="./dec.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">E-commerce website</h5>
+            <p class="card-text">E-commerce website with Django integrated with Stripe</p>
+            <a href="https://github.com/arjolfilipi1/Django-e-commerce" class="btn btn-outline-light" target="_blank">View Project</a>
+          </div>
+        </div>
+      </div>
+	  <!-- Project Card 5 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="./finreport.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">BOM Display</h5>
+            <p class="card-text">Desktop application to display material and connections for each branch of a harness</p>
+            <a href="#" class="btn btn-outline-light disabled " target="_blank">Project is not public</a>
+          </div>
+        </div>
+      </div>
+	  <!-- Project Card 6 -->
+	  <div class="col-md-4">
+        <div class="card h-100 shadow">
+          <img src="./mes.PNG" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">MES + +</h5>
+            <p class="card-text">A lightweight, real-time Manufacturing Execution System (MES) desktop application built with Python to streamline shop floor operations, improve traceability, and enhance production visibility. Made with PyQT5</p>
+            <a href="https://github.com/arjolfilipi1/mes-plus-plus-desktop" class="btn btn-outline-light" target="_blank">Project is not public</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-md-3 d-flex justify-content-center">
+                    <h5>Follow Us</h5>
+                </div>
+                <div class="social-links d-flex  justify-content-center">
+                    <a href="#" class="text-white me-2"><i class="bi bi-github"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" class="text-white me-2"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Arjol Filipi. All rights reserved.</p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    // ParticlesJS Config
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 80,
+          "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#0acefa" },
+        "shape": {
+          "type": "circle",
+          "stroke": { "width": 0, "color": "#000000" }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false
+        },
+        "size": {
+          "value": 3,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#0acefa",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 4,
+          "direction": "none",
+          "out_mode": "out"
+        }
+      },
+      "interactivity": {
+        "detect_on": "window",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" }
+        },
+        "modes": {
+          "repulse": { "distance": 100 },
+          "push": { "particles_nb": 4 }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
