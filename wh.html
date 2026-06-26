@@ -73,8 +73,14 @@
             position: relative;
             border-radius: 6px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			border-left: 4px solid #0d6efd;
+			transition: .25s ease;
         }
-        
+		.timeline-content:hover {
+		transform: translateY(-4px);
+			box-shadow:0 10px 30px rgba(0,0,0,.15);
+			
+		}
         @media screen and (max-width: 768px) {
             /* Place the timelime to the left */
             .timeline::after {
